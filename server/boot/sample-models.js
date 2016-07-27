@@ -8,27 +8,27 @@ module.exports = function(app) {
   var Role = app.models.Role;
   var RoleMapping = app.models.RoleMapping;
  // var Team = app.models.Team;
+   //-----------------------------------
+  // User.create([
+  //   {username: 'Jo5', email: 'jo5@doe.com', password: '11'},
+  //   {username: 'Ja5', email: 'jan5@doe.com', password: '11'},
+  //   {username: 'Bo5', email: 'bo5@21prts.com', password: '11'}
+  // ], function(err, users) {
+  //   if (err) throw err;
 
-  User.create([
-    {username: 'Jo5', email: 'jo5@doe.com', password: '11'},
-    {username: 'Ja5', email: 'jan5@doe.com', password: '11'},
-    {username: 'Bo5', email: 'bo5@21prts.com', password: '11'}
-  ], function(err, users) {
-    if (err) throw err;
+  //   console.log('Created users:', users);
 
-    console.log('Created users:', users);
+  //   // create project 1 and make john the owner
+  //   users[0].product.create({
+  //     id:'123111111115',
+  //     name: 'product116',
+  //     price: 1001,
+  //     ownerId:users[0].id
+  //   }, function(err, product) {
+  //     if (err) throw err;
 
-    // create project 1 and make john the owner
-    users[0].product.create({
-      id:'123111111115',
-      name: 'product116',
-      price: 1001,
-      ownerId:users[0].id
-    }, function(err, product) {
-      if (err) throw err;
-
-      console.log('Created product:', product);
-
+  //     console.log('Created product:', product);
+   //-----------------------------------
       // add team members
     //   Team.create([
     //     {ownerId: project.ownerId, memberId: users[0].id},
@@ -41,16 +41,18 @@ module.exports = function(app) {
     // });
 
     //create project 2 and make jane the owner
-    users[1].product.create({
-       id:'122151112',
-      name: 'produ5ct121',
-      price: 100,
-       ownerId:users[1].id
-    }, function(err, product) {
-      if (err) throw err;
 
-      console.log('Created product:', product);
-
+    //-----------------------------------
+    // users[1].product.create({
+    //    id:'122151112',
+    //   name: 'produ5ct121',
+    //   price: 100,
+    //    ownerId:users[1].id
+    // }, function(err, product) {
+    //   if (err) throw err;
+    //   console.log('Created product:', product);
+    // });
+   //-----------------------------------
       //add team members
     //   Team.create({
     //     ownerId: project.ownerId,
@@ -60,8 +62,7 @@ module.exports = function(app) {
 
     //     console.log('Created team:', team);
     //   });
- });
-
+ 
     //create the admin role
     // Role.create({
     //   name: 'admin'
@@ -82,7 +83,7 @@ module.exports = function(app) {
 
 
    // });
-  });
-});
+//   });
+// });
 
 }
